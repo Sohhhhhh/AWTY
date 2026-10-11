@@ -7,6 +7,8 @@ export const taskStatus = pgEnum('task_status', [
   'failed',
 ]);
 
+export type TaskStatus = (typeof taskStatus.enumValues)[number];
+
 export const tasks = pgTable('tasks', {
   id: uuid('id').defaultRandom().primaryKey(),
   status: taskStatus('status').default('pending').notNull(),

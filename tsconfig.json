@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "module": "node16",
+    "module": "nodenext",
     "outDir": "./dist",
     "rootDir": "./src",
     "strict": true,
@@ -12,7 +12,7 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
-    "moduleResolution": "node16",
+    "moduleResolution": "nodenext",
     "sourceMap": true,
     "noUnusedLocals": true,
     "noImplicitReturns": true,

@@ -46,7 +46,7 @@ export default (
 
 // --- Helpers ---
 
-// Handle Zod validation errors
+// handle Zod validation errors
 const handleZodError = (err: ZodError): APIError => {
   const message = err.issues
     .map((e) => `${e.path.join('.')}: ${e.message}`)
